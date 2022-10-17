@@ -1,0 +1,13 @@
+<h5>Buscar:</h5>
+<!--keyup.enter es un evento, en angular puedes especificar el valor esperado 
+    del evento keyup con incluso la tecla, la linea de código dice literalmente
+    Cuando el usuario presione enter ejecuta la función "buscar()"
+-->
+<input 
+    type="text" 
+    class="form-control" 
+    placeholder="Buscar gifs..."
+    (keyup.enter)="buscar()"
+    
+    #txtBuscar
+>
